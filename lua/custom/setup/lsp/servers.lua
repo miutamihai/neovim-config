@@ -1,14 +1,29 @@
 return {
+  -- HTML
   html = { filetypes = { 'html', 'twig', 'hbs' } },
-  vtsls = {},
+  tailwindcss = {},
+
+  -- Python
   pyright = {},
+
+  -- Rust
   rust_analyzer = {},
+
+  -- Go
   gopls = {},
 
+  -- Lua
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
     },
   },
+
+  -- Elm
+  elmls = {},
+
+  -- JavaScript
+  vtsls = {},
+  eslint = {},
 }
