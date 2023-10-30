@@ -7,4 +7,5 @@ return {
   require 'custom.plugins.colorscheme.init',
   require 'custom.plugins.autopair.init',
   require 'custom.plugins.noice.init',
+  require 'custom.plugins.treesitter-context.init'
 }
