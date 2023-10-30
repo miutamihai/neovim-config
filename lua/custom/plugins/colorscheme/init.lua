@@ -1,3 +1,5 @@
+-- Mihai Explains: Think this one's obvious
+
 return {
   "catppuccin/nvim",
   name = "catppuccin",
