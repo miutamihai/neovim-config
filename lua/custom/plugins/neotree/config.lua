@@ -116,8 +116,6 @@ return function()
         ["<2-LeftMouse>"] = "open",
         ["<cr>"] = "open",
         ["<esc>"] = "cancel", -- close preview or floating neo-tree window
-        ["P"] = { "toggle_preview", config = { use_float = true, use_image_nvim = true } },
-        -- Read `# Preview Mode` for more information
         ["l"] = "open",
         ["S"] = "open_split",
         ["s"] = "open_vsplit",
@@ -125,7 +123,6 @@ return function()
         -- ["<cr>"] = "open_drop",
         -- ["t"] = "open_tab_drop",
         ["w"] = "open_with_window_picker",
-        --["P"] = "toggle_preview", -- enter preview mode, which shows the current node without focusing
         ["h"] = "close_node",
         -- ['C'] = 'close_all_subnodes',
         ["z"] = "close_all_nodes",
@@ -277,6 +274,4 @@ return function()
       }
     }
   })
-
-  vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
 end
