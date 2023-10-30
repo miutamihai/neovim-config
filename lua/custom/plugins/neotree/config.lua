@@ -108,7 +108,11 @@ return function()
     -- A list of functions, each representing a global custom command
     -- that will be available in all sources (if not overridden in `opts[source_name].commands`)
     -- see `:h neo-tree-custom-commands-global`
-    commands = {},
+    commands = {
+      close_neotree = function()
+        vim.cmd [[Neotree close]]
+      end
+    },
     window = {
       position = "current",
       width = 40,
@@ -124,6 +128,7 @@ return function()
         ["S"] = "open_split",
         ["s"] = "open_vsplit",
         ["t"] = "open_tabnew",
+        ["<space>e"] = "close_neotree",
         -- ["<cr>"] = "open_drop",
         -- ["t"] = "open_tab_drop",
         ["w"] = "open_with_window_picker",
@@ -189,9 +194,9 @@ return function()
         },
       },
       follow_current_file = {
-        enabled = false,                      -- This will find and focus the file in the active buffer every time
+        enabled = true,                       -- This will find and focus the file in the active buffer every time
         --               -- the current file is changed while the tree is open.
-        leave_dirs_open = false,              -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
+        leave_dirs_open = true,               -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
       },
       group_empty_dirs = false,               -- when true, empty folders will be grouped together
       hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree
@@ -235,11 +240,11 @@ return function()
     },
     buffers = {
       follow_current_file = {
-        enabled = true,          -- This will find and focus the file in the active buffer every time
+        enabled = true,         -- This will find and focus the file in the active buffer every time
         --              -- the current file is changed while the tree is open.
-        leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
+        leave_dirs_open = true, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
       },
-      group_empty_dirs = true,   -- when true, empty folders will be grouped together
+      group_empty_dirs = true,  -- when true, empty folders will be grouped together
       show_unloaded = true,
       window = {
         mappings = {
