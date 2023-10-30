@@ -5,4 +5,5 @@
 return {
   require 'custom.plugins.neotree.init',
   require 'custom.plugins.colorscheme.init',
+  require 'custom.plugins.autopair.init',
 }
