@@ -10,6 +10,14 @@ return function()
     { text = "󰌵", texthl = "DiagnosticSignHint" })
 
   require("neo-tree").setup({
+    source_selector = {
+      winbar = true,
+      content_layout = "center",
+      sources = {
+        { source = "filesystem", display_name = " " .. "File" },
+        { source = "git_status", display_name = " " .. "Git" },
+      },
+    },
     close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
     popup_border_style = "rounded",
     enable_git_status = true,
@@ -64,8 +72,8 @@ return function()
       git_status = {
         symbols = {
           -- Change type
-          added     = "",  -- or "✚", but this is redundant info if you use git_status_colors on the name
-          modified  = "",  -- or "", but this is redundant info if you use git_status_colors on the name
+          added     = "✚", -- or "✚", but this is redundant info if you use git_status_colors on the name
+          modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
           deleted   = "✖", -- this can only be used in the git_status source
           renamed   = "󰁕", -- this can only be used in the git_status source
           -- Status type
@@ -109,10 +117,6 @@ return function()
         nowait = true,
       },
       mappings = {
-        ["<space>"] = {
-          "toggle_node",
-          nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
-        },
         ["<2-LeftMouse>"] = "open",
         ["<cr>"] = "open",
         ["<esc>"] = "cancel", -- close preview or floating neo-tree window
