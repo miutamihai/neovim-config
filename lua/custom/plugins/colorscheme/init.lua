@@ -34,6 +34,9 @@ return {
         enabled = true,
         color_mode = true,
       },
+      neotree = {
+        enabled = true
+      }
     },
   },
   config = function()
