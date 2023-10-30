@@ -3,5 +3,6 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  require 'custom.plugins.neotree.init'
+  require 'custom.plugins.neotree.init',
+  require 'custom.plugins.colorscheme.init',
 }
