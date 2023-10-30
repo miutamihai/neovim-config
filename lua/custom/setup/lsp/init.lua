@@ -68,21 +68,7 @@ return function()
   --
   --  If you want to override the default filetypes that your language server will attach to you can
   --  define the property 'filetypes' to the map in question.
-  local servers = {
-    html = { filetypes = { 'html', 'twig', 'hbs' } },
-    vtsls = {},
-    pyright = {},
-    rust_analyzer = {},
-    gopls = {},
-
-    lua_ls = {
-      Lua = {
-        workspace = { checkThirdParty = false },
-        telemetry = { enable = false },
-      },
-    },
-  }
-
+  local servers = require 'custom.setup.lsp.servers'
   -- Setup neovim lua configuration
   require('neodev').setup()
 
