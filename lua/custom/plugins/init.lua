@@ -11,4 +11,5 @@ return {
   require 'custom.plugins.trouble.init',
   require 'custom.plugins.refactoring.init',
   require 'custom.plugins.fugitive.init',
+  require 'custom.plugins.ts-autotag.init',
 }
