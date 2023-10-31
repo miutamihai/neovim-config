@@ -3,13 +3,14 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  require 'custom.plugins.neotree.init',
-  require 'custom.plugins.colorscheme.init',
-  require 'custom.plugins.autopair.init',
-  require 'custom.plugins.noice.init',
-  require 'custom.plugins.treesitter-context.init',
-  require 'custom.plugins.trouble.init',
-  require 'custom.plugins.refactoring.init',
-  require 'custom.plugins.fugitive.init',
-  require 'custom.plugins.ts-autotag.init',
+  require 'custom.plugins.neotree',
+  require 'custom.plugins.colorscheme',
+  require 'custom.plugins.autopair',
+  require 'custom.plugins.noice',
+  require 'custom.plugins.treesitter-context',
+  require 'custom.plugins.trouble',
+  require 'custom.plugins.refactoring',
+  require 'custom.plugins.fugitive',
+  require 'custom.plugins.ts-autotag',
+  require 'custom.plugins.dashboard',
 }
