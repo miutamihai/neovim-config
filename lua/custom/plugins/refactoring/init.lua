@@ -1,3 +1,6 @@
+-- Mihai Explains: This adds a couple of refactoring tools
+-- available by running :Refactor <command>
+
 return {
   "ThePrimeagen/refactoring.nvim",
   dependencies = {

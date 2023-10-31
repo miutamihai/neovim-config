@@ -10,4 +10,5 @@ return {
   require 'custom.plugins.treesitter-context.init',
   require 'custom.plugins.trouble.init',
   require 'custom.plugins.refactoring.init',
+  require 'custom.plugins.fugitive.init',
 }
