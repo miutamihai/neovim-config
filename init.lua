@@ -45,6 +45,10 @@ vim.g.maplocalleader = ' '
 
 vim.wo.relativenumber = true
 
+local setup_neovide = require 'custom.setup.neovide'
+
+setup_neovide()
+
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
