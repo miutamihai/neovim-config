@@ -412,3 +412,7 @@ cmp.setup {
 local setup_keymaps = require 'custom.setup.keymaps'
 
 setup_keymaps()
+
+local setup_misc = require 'custom.setup.misc'
+
+setup_misc()
