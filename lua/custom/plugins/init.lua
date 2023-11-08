@@ -13,4 +13,5 @@ return {
   require 'custom.plugins.fugitive',
   require 'custom.plugins.ts-autotag',
   require 'custom.plugins.dashboard',
+  require 'custom.plugins.buf-only',
 }
