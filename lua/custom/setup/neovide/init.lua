@@ -8,7 +8,7 @@ return function()
     -- vim.g.neovide_floating_blur_amount_y = 4.0
 
     -- Transparency
-    -- vim.g.neovide_transparency = 0.6
+    vim.g.neovide_transparency = 0.8
 
     -- Theme
     vim.g.neovide_theme = 'dark'
