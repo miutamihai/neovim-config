@@ -27,4 +27,7 @@ return {
   -- JavaScript
   vtsls = {},
   eslint = {},
+
+  -- Elixir
+  elixirls = {},
 }
