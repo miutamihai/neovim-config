@@ -14,4 +14,5 @@ return {
   require 'custom.plugins.ts-autotag',
   require 'custom.plugins.dashboard',
   require 'custom.plugins.buf-only',
+  require 'custom.plugins.dbee',
 }
