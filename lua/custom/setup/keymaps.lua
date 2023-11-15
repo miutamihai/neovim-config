@@ -14,4 +14,12 @@ return function()
   vim.api.nvim_set_keymap('n', '<leader>gd', '<cmd>lua require("gitsigns").diffthis() <cr>',
     { noremap = true, silent = true, desc = "View Git diff" }
   )
+
+  -- LSP
+  vim.api.nvim_set_keymap('n', '<leader>dd', '<cmd>lua require("telescope.builtin").lsp_definitions()<cr>',
+    { noremap = true, silent = true, desc = "LSP: View Definitions" }
+  )
+  vim.api.nvim_set_keymap('n', '<leader>dr', '<cmd>lua require("telescope.builtin").lsp_references()<cr>',
+    { noremap = true, silent = true, desc = "LSP: View References" }
+  )
 end
