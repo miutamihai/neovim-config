@@ -85,12 +85,24 @@ return function()
 
   mason_lspconfig.setup_handlers {
     function(server_name)
-      require('lspconfig')[server_name].setup {
+      local server = servers[server_name]
+
+      if not server then
+        return
+      end
+
+      local setup_input = {
         capabilities = capabilities,
         on_attach = on_attach,
-        settings = servers[server_name],
-        filetypes = (servers[server_name] or {}).filetypes,
+        settings = server,
+        filetypes = (server or {}).filetypes,
       }
+
+      if server['cmd'] then
+        setup_input['cmd'] = server.cmd
+      end
+
+      require('lspconfig')[server_name].setup(setup_input)
     end,
   }
 end

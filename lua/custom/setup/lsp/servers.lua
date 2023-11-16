@@ -5,7 +5,9 @@ return {
   cssls = {},
 
   -- Python
-  pyright = {},
+  pyright = {
+    cmd = { "pipenv", "run", "pyright-langserver", "--stdio" }
+  },
 
   -- Rust
   rust_analyzer = {},
