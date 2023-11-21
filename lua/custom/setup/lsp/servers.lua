@@ -32,4 +32,7 @@ return {
 
   -- Elixir
   elixirls = {},
+
+  -- Clojure
+  clojure_lsp = {},
 }
