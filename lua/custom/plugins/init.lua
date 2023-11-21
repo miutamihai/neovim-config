@@ -15,4 +15,5 @@ return {
   require 'custom.plugins.dashboard',
   require 'custom.plugins.buf-only',
   require 'custom.plugins.dbee',
+  require 'custom.plugins.scala-metals',
 }
