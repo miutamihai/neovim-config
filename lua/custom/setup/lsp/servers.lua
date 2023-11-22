@@ -35,4 +35,7 @@ return {
 
   -- Clojure
   clojure_lsp = {},
+
+  -- Svelte
+  svelte = {},
 }
