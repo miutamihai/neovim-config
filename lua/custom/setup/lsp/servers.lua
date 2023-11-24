@@ -41,4 +41,7 @@ return {
 
   -- Nim
   nim_langserver = {},
+
+  -- Zig
+  zls = {},
 }
