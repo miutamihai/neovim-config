@@ -27,7 +27,7 @@ return {
   elmls = {},
 
   -- JavaScript
-  vtsls = {},
+  tsserver = {},
   eslint = {},
 
   -- Elixir
