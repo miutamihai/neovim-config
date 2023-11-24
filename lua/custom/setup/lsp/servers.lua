@@ -38,4 +38,7 @@ return {
 
   -- Svelte
   svelte = {},
+
+  -- Nim
+  nim_langserver = {},
 }
