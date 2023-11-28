@@ -1,8 +1,9 @@
 return {
   -- HTML + CSS
   html = { filetypes = { 'html', 'twig', 'hbs' } },
-  tailwindcss = {},
-  cssls = {},
+  tailwindcss = { filetypes = { 'html', 'typescript-react', 'heex' } },
+  cssls = { filetypes = { 'css', 'scss', 'sass' } },
+  cssmodules_ls = {},
 
   -- Python
   pyright = {
