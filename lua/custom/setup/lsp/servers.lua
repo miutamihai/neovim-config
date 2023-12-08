@@ -45,4 +45,7 @@ return {
 
   -- Zig
   zls = {},
+
+  -- OCaml
+  ocamllsp = {},
 }
