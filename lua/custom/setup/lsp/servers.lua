@@ -48,4 +48,7 @@ return {
 
   -- OCaml
   ocamllsp = {},
+
+  -- WebGPU
+  wgsl_analyzer = {}
 }
