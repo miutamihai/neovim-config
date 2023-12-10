@@ -50,5 +50,8 @@ return {
   ocamllsp = {},
 
   -- WebGPU
-  wgsl_analyzer = {}
+  wgsl_analyzer = {},
+
+  -- F#
+  fsautocomplete = {},
 }
