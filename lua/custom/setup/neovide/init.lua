@@ -1,14 +1,14 @@
 return function()
   if vim.g.neovide then
     -- Font
-    vim.o.guifont = 'DaddyTimeMono Nerd Font Propo:h18'
+    vim.o.guifont = 'IntoneMono Nerd Font:h18'
 
     -- Blur
     -- vim.g.neovide_floating_blur_amount_x = 4.0
     -- vim.g.neovide_floating_blur_amount_y = 4.0
 
     -- Transparency
-    vim.g.neovide_transparency = 0.8
+    -- vim.g.neovide_transparency = 0.8
 
     -- Theme
     vim.g.neovide_theme = 'dark'
