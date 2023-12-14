@@ -54,4 +54,7 @@ return {
 
   -- F#
   fsautocomplete = {},
+
+  -- Nix
+  rnix = {},
 }
