@@ -17,4 +17,5 @@ return {
   require 'custom.plugins.dbee',
   require 'custom.plugins.scala-metals',
   require 'custom.plugins.fsharp-iodine',
+  require 'custom.plugins.chatgpt',
 }
