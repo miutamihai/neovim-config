@@ -6,7 +6,7 @@ return {
     shade = "dark",
     percentage = 0.15,
   },
-  transparent_background = true,
+  transparent_background = false,
   show_end_of_buffer = false,
   term_colors = true,
   styles = {
