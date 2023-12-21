@@ -6,6 +6,7 @@ return {
   cssmodules_ls = {},
 
   -- Python
+  ruff_lsp = {},
   pyright = {
     cmd = { "pipenv", "run", "pyright-langserver", "--stdio" }
   },
