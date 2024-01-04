@@ -35,26 +35,8 @@ return {
   -- Elixir
   elixirls = {},
 
-  -- Clojure
-  clojure_lsp = {},
-
   -- Svelte
   svelte = {},
-
-  -- Nim
-  nim_langserver = {},
-
-  -- Zig
-  zls = {},
-
-  -- OCaml
-  ocamllsp = {},
-
-  -- WebGPU
-  wgsl_analyzer = {},
-
-  -- F#
-  fsautocomplete = {},
 
   -- Nix
   rnix = {},
