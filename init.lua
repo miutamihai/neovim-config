@@ -413,6 +413,10 @@ local setup_keymaps = require 'custom.setup.keymaps'
 
 setup_keymaps()
 
+local setup_autocommands = require 'custom.setup.autocommands'
+
+setup_autocommands()
+
 local setup_misc = require 'custom.setup.misc'
 
 setup_misc()
