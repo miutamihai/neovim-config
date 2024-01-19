@@ -6,8 +6,8 @@ return {
     shade = "dark",
     percentage = 0.15,
   },
-  transparent_background = false,
-  show_end_of_buffer = false,
+  transparent_background = true,
+  show_end_of_buffer = true,
   term_colors = true,
   styles = {
     comments = { "italic" },

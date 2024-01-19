@@ -17,7 +17,10 @@ return {
   require 'custom.plugins.dbee',
   require 'custom.plugins.scala-metals',
   require 'custom.plugins.fsharp-iodine',
-  require 'custom.plugins.chatgpt',
   require 'custom.plugins.leap',
   require 'custom.plugins.org-mode',
+  require 'custom.plugins.just',
+  require 'custom.plugins.gopher',
+  require 'custom.plugins.vim-be-good',
+  require 'custom.plugins.haskell-tools',
 }

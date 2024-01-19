@@ -16,6 +16,7 @@ return {
 
   -- Go
   gopls = {},
+  templ = {},
 
   -- Lua
   lua_ls = {
