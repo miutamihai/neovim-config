@@ -32,6 +32,7 @@ return {
   -- JavaScript
   vtsls = {},
   eslint = {},
+  denols = {},
 
   -- Elixir
   elixirls = {},
