@@ -32,14 +32,17 @@ return {
   -- JavaScript
   vtsls = {},
   eslint = {},
-  denols = {},
 
-  -- Elixir
+  -- Elixir / Erlang
   elixirls = {},
+  elp = {},
 
   -- Svelte
   svelte = {},
 
   -- Nix
   rnix = {},
+
+  -- Clojure
+  clojure_lsp = {},
 }
