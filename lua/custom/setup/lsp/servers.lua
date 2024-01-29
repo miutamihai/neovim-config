@@ -45,4 +45,7 @@ return {
 
   -- Clojure
   clojure_lsp = {},
+
+  -- Ocaml
+  ocamllsp = {},
 }
