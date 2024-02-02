@@ -23,4 +23,5 @@ return {
   require 'custom.plugins.gopher',
   require 'custom.plugins.vim-be-good',
   require 'custom.plugins.haskell-tools',
+  require 'custom.plugins.rescript',
 }

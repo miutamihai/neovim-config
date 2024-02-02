@@ -32,6 +32,7 @@ return {
   -- JavaScript
   vtsls = {},
   eslint = {},
+  rescriptls = {},
 
   -- Elixir / Erlang
   elixirls = {},
@@ -48,4 +49,9 @@ return {
 
   -- Ocaml
   ocamllsp = {},
+
+  -- Terraform
+
+  terraformls = {},
+  tflint = {},
 }
