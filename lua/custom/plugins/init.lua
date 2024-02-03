@@ -24,4 +24,5 @@ return {
   require 'custom.plugins.vim-be-good',
   require 'custom.plugins.haskell-tools',
   require 'custom.plugins.rescript',
+  require 'custom.plugins.bookmark',
 }
