@@ -25,4 +25,5 @@ return {
   require 'custom.plugins.haskell-tools',
   require 'custom.plugins.rescript',
   require 'custom.plugins.bookmark',
+  require 'custom.plugins.rustacean',
 }

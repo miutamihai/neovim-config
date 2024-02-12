@@ -26,6 +26,7 @@ return {
     local dapui = require 'dapui'
 
     require('mason-nvim-dap').setup {
+      automatic_installation = true,
       -- Makes a best effort to setup the various debuggers with
       -- reasonable debug configurations
       automatic_setup = true,
@@ -39,6 +40,7 @@ return {
       ensure_installed = {
         -- Update this to ensure that you have the debuggers for the langs you want
         'delve',
+        'codelldb',
       },
     }
 

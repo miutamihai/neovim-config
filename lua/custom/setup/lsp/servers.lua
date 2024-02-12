@@ -12,7 +12,7 @@ return {
   },
 
   -- Rust
-  rust_analyzer = {},
+  -- rust_analyzer = {},
 
   -- Go
   gopls = {},
@@ -51,7 +51,6 @@ return {
   ocamllsp = {},
 
   -- Terraform
-
   terraformls = {},
   tflint = {},
 }

@@ -5,6 +5,9 @@ This is my Neovim Config. It's based on (and started as a fork of) the fantastic
 ## Small Showcase
 ![showcase](/doc/showcase.mov)
 
+## Dependencies
+* [lldb](https://lldb.llvm.org)
+
 ## Useful notes
 
 * I use [Neovide](https://neovide.dev/) as a GUI editor, but the config will work even if you 
