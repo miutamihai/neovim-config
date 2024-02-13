@@ -12,7 +12,7 @@ return {
   },
 
   -- Rust
-  -- rust_analyzer = {},
+  rust_analyzer = {},
 
   -- Go
   gopls = {},
