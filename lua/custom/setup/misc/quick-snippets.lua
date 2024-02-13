@@ -2,4 +2,5 @@
 
 return function()
   vim.keymap.set('n', '<leader>pp', 'aPULA ')
+  vim.keymap.set('n', '<leader>ph', 'ipulaLuiHristos')
 end
