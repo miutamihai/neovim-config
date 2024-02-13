@@ -30,9 +30,15 @@ return {
     dashboard = true,
     gitsigns = true,
     mason = true,
-    neotree = { enabled = true, show_root = true, transparent_panel = false },
+    neotree = { enabled = true, show_root = true, transparent_panel = true },
     noice = true,
     treesitter_context = true,
+    indent_blankline = {
+      enabled = true,
+      scope_color = "lavander",
+      colored_indent_levels = true,
+    },
+    notify = true,
   },
   color_overrides = {},
 }
