@@ -12,4 +12,9 @@ return function()
     -- Start LSP
     vim.cmd('LspStart')
   end, {})
+
+  -- To be used for erlang projects
+  vim.api.nvim_create_user_command('RebarFormat', function()
+    vim.fn.system('rebar3 format')
+  end, {})
 end
