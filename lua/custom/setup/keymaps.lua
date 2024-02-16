@@ -33,4 +33,25 @@ return function()
   vim.api.nvim_set_keymap('n', '<leader>wdp', '<cmd>lua require("dbee").prev()<cr>',
     { noremap = true, silent = true, desc = "Dbee: Previous Result Page" }
   )
+
+  -- Bookmarks
+
+  vim.api.nvim_set_keymap('n', '<leader>mm', '<cmd>lua require("bookmarks").bookmark_toggle()<cr>',
+    { noremap = true, silent = true, desc = "Bookmarks: Toggle bookmark" }
+  )
+  vim.api.nvim_set_keymap('n', '<leader>mi', '<cmd>lua require("bookmarks").bookmark_clean()<cr>',
+    { noremap = true, silent = true, desc = "Bookmarks: Clean all bookmarks in current buffer" }
+  )
+  vim.api.nvim_set_keymap('n', '<leader>mn', '<cmd>lua require("bookmarks").bookmark_next()<cr>',
+    { noremap = true, silent = true, desc = "Bookmarks: Jump to next mark in current buffer" }
+  )
+  vim.api.nvim_set_keymap('n', '<leader>mp', '<cmd>lua require("bookmarks").bookmark_prev()<cr>',
+    { noremap = true, silent = true, desc = "Bookmarks: Jump to previous mark in current buffer" }
+  )
+  vim.api.nvim_set_keymap('n', '<leader>ml', '<cmd>lua require("bookmarks").bookmark_list()<cr>',
+    { noremap = true, silent = true, desc = "Bookmarks: Show marked file list in quickfix window" }
+  )
+  vim.api.nvim_set_keymap('n', '<leader>sm', '<cmd>lua require("telescope").extensions.bookmarks.list()<cr>',
+    { noremap = true, silent = true, desc = "Bookmarks: Search Bookmarks" }
+  )
 end
