@@ -12,7 +12,13 @@ return {
   },
 
   -- Rust
-  rust_analyzer = {},
+  rust_analyzer = {
+    ["rust-analyzer"] = {
+      checkOnSave = {
+        command = "clippy",
+      },
+    },
+  },
 
   -- Go
   gopls = {},
