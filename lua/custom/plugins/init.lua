@@ -26,4 +26,5 @@ return {
   require 'custom.plugins.rescript',
   require 'custom.plugins.bookmark',
   require 'custom.plugins.elixir-tools',
+  require 'custom.plugins.git-conflict',
 }
