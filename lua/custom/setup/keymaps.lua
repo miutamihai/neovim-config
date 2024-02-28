@@ -1,6 +1,7 @@
 -- Mihai Explains: This file handlers _most_ shortcuts
 
 return function()
+  -- TODO: Change the lua ones to use the correct api
   -- Neotree
   vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>Neotree reveal<cr>',
     { noremap = true, silent = true, desc = "Toggle Explorer" })
@@ -53,5 +54,14 @@ return function()
   )
   vim.api.nvim_set_keymap('n', '<leader>sm', '<cmd>lua require("telescope").extensions.bookmarks.list()<cr>',
     { noremap = true, silent = true, desc = "Bookmarks: Search Bookmarks" }
+  )
+
+  -- Code Lens
+  vim.keymap.set('n', '<space>cl', vim.lsp.codelens.run,
+    { noremap = true, silent = true, desc = "Code Lens: Run code lens" }
+  )
+
+  vim.keymap.set('n', '<space>cr', vim.lsp.codelens.refresh,
+    { noremap = true, silent = true, desc = "Code Lens: Refresh code lens" }
   )
 end

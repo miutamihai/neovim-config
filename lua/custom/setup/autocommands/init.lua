@@ -1,20 +1,11 @@
--- Mihai Explains: this one sets up all my custom auto commands
+-- Mihai Explains: this one sets up all autocmds
 
 return function()
-  -- To be used when working in codebases with shit formatting
-  vim.api.nvim_create_user_command('NoFormatSave', function()
-    -- Stop LSP
-    vim.cmd('LspStop')
-
-    -- Save the current buffer
-    vim.cmd('w')
-
-    -- Start LSP
-    vim.cmd('LspStart')
-  end, {})
-
-  -- To be used for erlang projects
-  vim.api.nvim_create_user_command('RebarFormat', function()
-    vim.fn.system('rebar3 format')
-  end, {})
+  vim.api.nvim_create_autocmd({ "BufWritePost", "BufEnter" }, {
+    pattern = { "*" },
+    group = vim.api.nvim_create_augroup('CodeLensRefresh', { clear = true }),
+    callback = function()
+      vim.lsp.codelens.refresh()
+    end
+  })
 end

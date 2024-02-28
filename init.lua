@@ -411,13 +411,17 @@ cmp.setup {
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
+local setup_autocommands = require 'custom.setup.autocommands'
+
+setup_autocommands()
+
 local setup_keymaps = require 'custom.setup.keymaps'
 
 setup_keymaps()
 
-local setup_autocommands = require 'custom.setup.autocommands'
+local setup_usercommands = require 'custom.setup.usercommands'
 
-setup_autocommands()
+setup_usercommands()
 
 local setup_misc = require 'custom.setup.misc'
 
