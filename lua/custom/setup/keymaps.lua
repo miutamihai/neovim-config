@@ -64,4 +64,9 @@ return function()
   vim.keymap.set('n', '<space>cr', vim.lsp.codelens.refresh,
     { noremap = true, silent = true, desc = "Code Lens: Refresh code lens" }
   )
+
+  -- Spectre
+  vim.keymap.set('n', '<space>S', function()
+    require("spectre").toggle()
+  end, { noremap = true, silent = true, desc = "[S]pecter: Toggle Spectre" })
 end

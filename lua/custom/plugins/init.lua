@@ -28,4 +28,5 @@ return {
   require 'custom.plugins.elixir-tools',
   require 'custom.plugins.git-conflict',
   require 'custom.plugins.roc',
+  require 'custom.plugins.spectre',
 }
