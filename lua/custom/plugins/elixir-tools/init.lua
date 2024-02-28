@@ -27,7 +27,7 @@ return {
         settings = elixirls.settings {
           dialyzerEnabled = true,
           fetchDeps = false,
-          enableTestLenses = false,
+          enableTestLenses = true,
           suggestSpecs = true,
         },
       }
