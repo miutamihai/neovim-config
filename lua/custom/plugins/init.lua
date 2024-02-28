@@ -27,4 +27,5 @@ return {
   require 'custom.plugins.bookmark',
   require 'custom.plugins.elixir-tools',
   require 'custom.plugins.git-conflict',
+  require 'custom.plugins.roc',
 }
