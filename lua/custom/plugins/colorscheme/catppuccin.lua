@@ -1,4 +1,4 @@
-return {
+local opts = {
   flavour = "mocha",
   background = { light = "latte", dark = "mocha" },
   dim_inactive = {
@@ -41,4 +41,14 @@ return {
     notify = true,
   },
   color_overrides = {},
+}
+
+return {
+  "catppuccin/nvim",
+  name = "catppuccin",
+  config = function()
+    require("catppuccin").setup(opts)
+
+    vim.cmd [[colorscheme catppuccin]]
+  end,
 }
