@@ -23,7 +23,7 @@ return {
       },
       credo = { enable = true },
       elixirls = {
-        enable = true,
+        enable = false,
         settings = elixirls.settings {
           dialyzerEnabled = true,
           fetchDeps = false,

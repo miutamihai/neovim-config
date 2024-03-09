@@ -41,8 +41,7 @@ return {
   rescriptls = {},
 
   -- Elixir / Erlang
-  -- Handled by elixir-tools
-  -- elixirls = {},
+  elixirls = {},
   elp = {},
 
   -- Svelte
