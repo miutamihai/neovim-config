@@ -39,6 +39,7 @@ return {
   vtsls = {},
   eslint = {},
   rescriptls = {},
+  biome = {},
 
   -- Elixir / Erlang
   elixirls = {},
