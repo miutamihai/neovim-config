@@ -41,9 +41,10 @@ return {
   rescriptls = {},
   biome = {},
 
-  -- Elixir / Erlang
+  -- Elixir / Erlang / Gleam
   elixirls = {},
   elp = {},
+  gleam = {},
 
   -- Svelte
   svelte = {},
