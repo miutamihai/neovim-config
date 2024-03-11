@@ -39,7 +39,9 @@ return {
   vtsls = {},
   eslint = {},
   rescriptls = {},
-  biome = {},
+
+  -- Uncomment if working in a project that doesn't suck
+  -- biome = {},
 
   -- Elixir / Erlang / Gleam
   elixirls = {},
