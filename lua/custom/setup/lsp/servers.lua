@@ -64,6 +64,4 @@ return {
   terraformls = {},
   tflint = {},
 
-  -- Haskell
-  hls = {},
 }
