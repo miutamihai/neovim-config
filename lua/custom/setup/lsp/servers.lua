@@ -39,6 +39,8 @@ return {
   vtsls = {},
   eslint = {},
   rescriptls = {},
+  svelte = {},
+  volar = {},
 
   -- Uncomment if working in a project that doesn't suck
   -- biome = {},
@@ -47,9 +49,6 @@ return {
   elixirls = {},
   elp = {},
   gleam = {},
-
-  -- Svelte
-  svelte = {},
 
   -- Nix
   rnix = {},
