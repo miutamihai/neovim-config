@@ -63,4 +63,6 @@ return {
   terraformls = {},
   tflint = {},
 
+  -- Kotlin
+  kotlin_language_server = {},
 }
