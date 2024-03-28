@@ -45,10 +45,9 @@ return {
   -- Uncomment if working in a project that doesn't suck
   -- biome = {},
 
-  -- Elixir / Erlang / Gleam
+  -- Elixir / Erlang
   elixirls = {},
   elp = {},
-  gleam = {},
 
   -- Nix
   rnix = {},
