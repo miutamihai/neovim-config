@@ -183,7 +183,8 @@ require('lazy').setup({
       options = {
         icons_enabled = true,
         -- theme = 'everforest',
-        theme = 'kanagawa',
+        -- theme = 'kanagawa',
+        theme = 'aurora',
         -- theme = 'nightfox',
         -- theme = 'catppuccin',
         component_separators = '|',
