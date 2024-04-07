@@ -46,7 +46,8 @@ return {
   -- biome = {},
 
   -- Elixir / Erlang
-  elixirls = {},
+  -- This one's handled by ElixirTools
+  -- elixirls = {},
   elp = {},
 
   -- Nix

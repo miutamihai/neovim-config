@@ -10,13 +10,13 @@ return {
 
     elixir.setup {
       nextls = {
-        enable = false,
+        enable = true,
         init_options = {
-          mix_env = "dev",
+          mix_env = "prod",
           mix_target = "host",
           experimental = {
             completions = {
-              enable = true -- control if completions are enabled. defaults to false
+              enable = true
             }
           }
         },
