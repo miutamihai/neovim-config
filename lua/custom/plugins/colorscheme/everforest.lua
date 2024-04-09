@@ -9,8 +9,6 @@ return {
       transparent_background_level = 2,
       ui_contrast = "high",
       italics = true,
-      diagnostic_text_highlight = true,
-      diagnostic_line_highlight = true
     })
 
     vim.cmd([[colorscheme everforest]])
