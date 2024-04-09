@@ -11,7 +11,6 @@ return {
   require 'custom.plugins.trouble',
   require 'custom.plugins.ts-autotag',
   require 'custom.plugins.buf-only',
-  require 'custom.plugins.dbee',
   require 'custom.plugins.scala-metals',
   require 'custom.plugins.gopher',
   require 'custom.plugins.haskell-tools',
