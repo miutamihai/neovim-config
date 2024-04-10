@@ -20,6 +20,7 @@ return {
             }
           }
         },
+        on_attach = require "custom.setup.lsp.on_attach"
       },
       credo = { enable = true },
       elixirls = {
