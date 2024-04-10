@@ -10,27 +10,18 @@ return {
 
     elixir.setup {
       nextls = {
-        enable = true,
-        init_options = {
-          mix_env = "prod",
-          mix_target = "host",
-          experimental = {
-            completions = {
-              enable = true
-            }
-          }
-        },
-        on_attach = require "custom.setup.lsp.on_attach"
+        enable = false,
       },
       credo = { enable = true },
       elixirls = {
-        enable = false,
+        enable = true,
         settings = elixirls.settings {
           dialyzerEnabled = true,
-          fetchDeps = false,
+          fetchDeps = true,
           enableTestLenses = true,
           suggestSpecs = true,
         },
+        on_attach = require "custom.setup.lsp.on_attach"
       }
     }
   end,
