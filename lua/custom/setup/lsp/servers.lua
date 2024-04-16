@@ -49,6 +49,7 @@ return {
   -- This one's handled by ElixirTools
   -- elixirls = {},
   elp = {},
+  -- erlangls = {},
 
   -- Nix
   rnix = {},
