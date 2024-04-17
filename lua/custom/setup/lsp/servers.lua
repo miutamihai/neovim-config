@@ -45,6 +45,12 @@ return {
   -- Uncomment if working in a project that doesn't suck
   -- biome = {},
 
+  -- PureScript
+  purescriptls = {},
+
+  -- Dhall
+  dhall_lsp_server = {},
+
   -- Elixir / Erlang
   -- This one's handled by ElixirTools
   -- elixirls = {},

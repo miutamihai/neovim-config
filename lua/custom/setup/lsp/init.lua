@@ -62,4 +62,8 @@ return function()
       require('lspconfig')[server_name].setup(setup_input)
     end,
   }
+
+  local lspconfig = require 'lspconfig'
+
+  lspconfig.gleam.setup({})
 end
