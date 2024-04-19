@@ -1,10 +1,10 @@
 -- Mihai Explains: This one stores quick snippets
 
 return function()
-  vim.api.nvim_set_keymap('n', '<leader>pp', '<cmd>aPULA <cr>',
+  vim.keymap.set('n', '<leader>pp', 'aPULA ',
     { noremap = true, silent = true, desc = "[P]ut: 'PULA'" })
 
-  vim.api.nvim_set_keymap('n', '<leader>ph', '<cmd>apulaLuiHristos<cr>',
+  vim.keymap.set('n', '<leader>ph', 'apulaLuiHristos',
     { noremap = true, silent = true, desc = "[P]ut: 'PulaLuiHristos'" })
 
   vim.keymap.set('n', '<leader>pf', function()
