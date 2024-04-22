@@ -30,6 +30,7 @@ return function()
         name = "sourcekit-lsp",
         cmd = { "sourcekit-lsp" },
         root_dir = root_dir,
+        on_attach = require 'custom.setup.lsp.on_attach'
       })
       vim.lsp.buf_attach_client(0, client)
     end,
