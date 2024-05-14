@@ -18,4 +18,5 @@ return {
   require 'custom.plugins.elixir-tools',
   require 'custom.plugins.git-conflict',
   require 'custom.plugins.spectre',
+  require 'custom.plugins.markdown-preview',
 }
