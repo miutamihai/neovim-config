@@ -24,19 +24,7 @@ return function()
     { noremap = true, silent = true, desc = "LSP: View References" }
   )
 
-  -- Dbee
-  vim.api.nvim_set_keymap('n', '<leader>wde', '<cmd>lua require("dbee").toggle()<cr>',
-    { noremap = true, silent = true, desc = "Dbee: Toggle View" }
-  )
-  vim.api.nvim_set_keymap('n', '<leader>wdn', '<cmd>lua require("dbee").next()<cr>',
-    { noremap = true, silent = true, desc = "Dbee: Next Result Page" }
-  )
-  vim.api.nvim_set_keymap('n', '<leader>wdp', '<cmd>lua require("dbee").prev()<cr>',
-    { noremap = true, silent = true, desc = "Dbee: Previous Result Page" }
-  )
-
   -- Bookmarks
-
   vim.api.nvim_set_keymap('n', '<leader>mm', '<cmd>lua require("bookmarks").bookmark_toggle()<cr>',
     { noremap = true, silent = true, desc = "Bookmarks: Toggle bookmark" }
   )
