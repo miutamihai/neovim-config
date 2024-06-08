@@ -5,17 +5,21 @@ return {
   cssls = { filetypes = { 'css', 'scss', 'sass' } },
   cssmodules_ls = {},
 
+  -- JavaScript
+  vtsls = {},
+  eslint = {},
+
   -- Python
   ruff_lsp = {},
   pyright = {
-    cmd = { "pipenv", "run", "pyright-langserver", "--stdio" }
+    cmd = { 'pipenv', 'run', 'pyright-langserver', '--stdio' },
   },
 
   -- Rust
   rust_analyzer = {
-    ["rust-analyzer"] = {
+    ['rust-analyzer'] = {
       checkOnSave = {
-        command = "clippy",
+        command = 'clippy',
       },
     },
   },
@@ -26,50 +30,23 @@ return {
 
   -- Lua
   lua_ls = {
-    Lua = {
-      workspace = { checkThirdParty = false },
-      telemetry = { enable = false },
+    -- cmd = {...},
+    -- filetypes = { ...},
+    -- capabilities = {},
+    settings = {
+      Lua = {
+        completion = {
+          callSnippet = 'Replace',
+        },
+        -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
+        -- diagnostics = { disable = { 'missing-fields' } },
+      },
     },
   },
 
-  -- Elm
-  elmls = {},
+  -- YAML
+  yamlls = {},
 
-  -- JavaScript
-  vtsls = {},
-  eslint = {},
-  rescriptls = {},
-  svelte = {},
-  volar = {},
-
-  -- Uncomment if working in a project that doesn't suck
-  -- biome = {},
-
-  -- PureScript
-  purescriptls = {},
-
-  -- Dhall
-  dhall_lsp_server = {},
-
-  -- Elixir / Erlang
-  -- This one's handled by ElixirTools
-  -- elixirls = {},
-  elp = {},
-  -- erlangls = {},
-
-  -- Nix
-  rnix = {},
-
-  -- Clojure
-  clojure_lsp = {},
-
-  -- Ocaml
-  ocamllsp = {},
-
-  -- Terraform
-  terraformls = {},
-  tflint = {},
-
-  -- Kotlin
-  kotlin_language_server = {},
+  -- Bash
+  bashls = {},
 }
