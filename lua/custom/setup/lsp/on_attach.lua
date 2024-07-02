@@ -54,6 +54,10 @@ return function(event)
   --    See `:help CursorHold` for information about when this is executed
   --
   -- When you move your cursor, the highlights will be cleared (the second autocommand).
+  if not event.data then
+    return
+  end
+
   local client = vim.lsp.get_client_by_id(event.data.client_id)
   if client and client.server_capabilities.documentHighlightProvider then
     local highlight_augroup = vim.api.nvim_create_augroup('kickstart-lsp-highlight', { clear = false })
