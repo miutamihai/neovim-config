@@ -10,9 +10,22 @@ return {
   eslint = {},
 
   -- Python
-  ruff_lsp = {},
+  ruff = {
+    cmd_env = { RUFF_TRACE = 'messages' },
+    cmd = { 'pipenv', 'run', 'ruff', 'server', '--preview' },
+  },
   pyright = {
     cmd = { 'pipenv', 'run', 'pyright-langserver', '--stdio' },
+    pyright = {
+      -- Using Ruff's import organizer
+      disableOrganizeImports = true,
+    },
+    python = {
+      analysis = {
+        -- Ignore all files for analysis to exclusively use Ruff for linting
+        ignore = { '*' },
+      },
+    },
   },
 
   -- Rust
@@ -49,4 +62,10 @@ return {
 
   -- Bash
   bashls = {},
+
+  -- C/C++
+  clangd = {},
+
+  -- Zig
+  zls = {},
 }

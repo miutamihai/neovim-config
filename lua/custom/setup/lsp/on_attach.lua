@@ -91,4 +91,10 @@ return function(event)
       vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
     end, '[T]oggle Inlay [H]ints')
   end
+
+  -- This one stops ruff from doing any hover stuff
+  if client.name == 'ruff' then
+    -- Disable hover in favor of Pyright
+    client.server_capabilities.hoverProvider = false
+  end
 end
