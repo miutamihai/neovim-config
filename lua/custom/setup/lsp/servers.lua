@@ -1,13 +1,14 @@
 return {
   -- HTML + CSS
   html = { filetypes = { 'html', 'twig', 'hbs' } },
-  tailwindcss = { filetypes = { 'html', 'typescript-react', 'heex' } },
+  tailwindcss = { filetypes = { 'html', 'typescript-react', 'heex', 'vue' } },
   cssls = { filetypes = { 'css', 'scss', 'sass' } },
   cssmodules_ls = {},
 
   -- JavaScript
   vtsls = {},
   eslint = {},
+  volar = {},
 
   -- Python
   ruff = {

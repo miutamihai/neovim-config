@@ -28,4 +28,5 @@ return {
   'kotlin',
   'purescript',
   'dhall',
+  'vue',
 }
