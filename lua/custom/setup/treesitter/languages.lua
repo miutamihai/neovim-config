@@ -29,4 +29,6 @@ return {
   'purescript',
   'dhall',
   'vue',
+  'scss',
+  'css',
 }
