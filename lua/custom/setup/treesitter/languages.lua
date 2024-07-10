@@ -31,4 +31,5 @@ return {
   'vue',
   'scss',
   'css',
+  'clojure',
 }

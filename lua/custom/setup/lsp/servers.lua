@@ -69,4 +69,7 @@ return {
 
   -- Zig
   zls = {},
+
+  -- Clojure
+  clojure_lsp = {},
 }
