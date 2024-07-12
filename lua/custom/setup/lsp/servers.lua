@@ -72,4 +72,7 @@ return {
 
   -- Clojure
   clojure_lsp = {},
+
+  -- OCaml
+  ocamllsp = {},
 }
