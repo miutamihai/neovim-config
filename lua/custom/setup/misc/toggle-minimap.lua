@@ -1,5 +1,5 @@
 return function()
-  vim.api.nvim_create_autocmd({ 'FocusGained' }, {
+  vim.api.nvim_create_autocmd({ 'BufEnter' }, {
     command = 'MinimapToggle',
     pattern = { '*' },
   })
