@@ -20,5 +20,4 @@ return {
   require 'custom.plugins.spectre',
   require 'custom.plugins.markdown-preview',
   require 'custom.plugins.dbee',
-  require 'custom.plugins.minimap',
 }
