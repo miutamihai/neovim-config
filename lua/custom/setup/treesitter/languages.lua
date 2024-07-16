@@ -32,4 +32,5 @@ return {
   'scss',
   'css',
   'clojure',
+  'regex',
 }
