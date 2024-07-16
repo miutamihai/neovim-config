@@ -4,6 +4,7 @@ return {
   tailwindcss = { filetypes = { 'html', 'typescript-react', 'heex', 'vue' } },
   cssls = { filetypes = { 'css', 'scss', 'sass' } },
   cssmodules_ls = {},
+  somesass_ls = {},
 
   -- JavaScript
   vtsls = {},
