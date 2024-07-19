@@ -76,4 +76,7 @@ return {
 
   -- OCaml
   ocamllsp = {},
+
+  -- Markdown
+  markdown_oxide = {},
 }

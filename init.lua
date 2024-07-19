@@ -509,6 +509,7 @@ require('lazy').setup({
             local lspconfig = require 'lspconfig'
             lspconfig[server_name].setup(server)
             lspconfig.gleam.setup {}
+            lspconfig.mojo.setup {}
           end,
         },
       }
