@@ -10,6 +10,7 @@ return {
   vtsls = {},
   eslint = {},
   volar = {},
+  biome = {},
 
   -- Python
   ruff = {
