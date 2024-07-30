@@ -34,4 +34,5 @@ return {
   'clojure',
   'regex',
   'zig',
+  'prisma',
 }

@@ -11,6 +11,7 @@ return {
   eslint = {},
   volar = {},
   biome = {},
+  prismals = {},
 
   -- Python
   ruff = {
