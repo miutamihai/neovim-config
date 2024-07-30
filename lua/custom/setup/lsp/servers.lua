@@ -1,7 +1,7 @@
 return {
   -- HTML + CSS
   html = { filetypes = { 'html', 'twig', 'hbs' } },
-  tailwindcss = { filetypes = { 'html', 'typescript-react', 'heex', 'vue' } },
+  tailwindcss = { filetypes = { 'html', 'typescriptreact', 'heex', 'vue' } },
   cssls = { filetypes = { 'css', 'scss', 'sass' } },
   cssmodules_ls = {},
   somesass_ls = {},
