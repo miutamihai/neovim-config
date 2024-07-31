@@ -81,4 +81,8 @@ return {
 
   -- Markdown
   markdown_oxide = {},
+
+  -- Docker
+  dockerls = {},
+  docker_compose_language_service = {},
 }
