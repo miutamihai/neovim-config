@@ -76,9 +76,6 @@ return {
   -- Clojure
   clojure_lsp = {},
 
-  -- OCaml
-  ocamllsp = {},
-
   -- Markdown
   markdown_oxide = {},
 
@@ -89,4 +86,7 @@ return {
   -- Terraform
   terraformls = {},
   tflint = {},
+
+  -- Elixir
+  lexical = {},
 }
