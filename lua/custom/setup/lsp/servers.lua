@@ -89,4 +89,7 @@ return {
 
   -- Elixir
   lexical = {},
+
+  -- Text
+  typos_lsp = {},
 }
