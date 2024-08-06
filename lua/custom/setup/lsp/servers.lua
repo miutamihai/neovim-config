@@ -85,4 +85,8 @@ return {
   -- Docker
   dockerls = {},
   docker_compose_language_service = {},
+
+  -- Terraform
+  terraformls = {},
+  tflint = {},
 }
