@@ -92,4 +92,7 @@ return {
 
   -- Text
   typos_lsp = {},
+
+  -- SQL
+  sqlls = {},
 }

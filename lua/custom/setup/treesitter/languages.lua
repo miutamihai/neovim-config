@@ -35,4 +35,5 @@ return {
   'regex',
   'zig',
   'prisma',
+  'sql',
 }
