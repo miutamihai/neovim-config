@@ -64,6 +64,9 @@ return {
   -- YAML
   yamlls = {},
 
+  -- JSON
+  jsonls = {},
+
   -- Bash
   bashls = {},
 
