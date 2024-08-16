@@ -35,25 +35,39 @@ return {
 
       -- You can provide additional configuration to the handlers,
       -- see mason-nvim-dap README for more information
-      handlers = {},
+      handlers = {
+        function(config)
+          require('mason-nvim-dap').default_setup(config)
+        end,
+        js = function(config)
+          config.adapters = {
+            type = 'server',
+            host = '127.0.0.1',
+            port = 8123,
+            executable = {
+              command = 'js-debug-adapter',
+            },
+          }
+          require('mason-nvim-dap').default_setup(config)
+        end,
+      },
 
       -- You'll need to check that you have the required things installed
       -- online, please don't ask me how to install them :)
       ensure_installed = {
         -- Update this to ensure that you have the debuggers for the langs you want
         'delve',
+        'codelldb',
+        'js',
       },
     }
 
     -- Basic debugging keymaps, feel free to change to your liking!
-    vim.keymap.set('n', '<F5>', dap.continue, { desc = 'Debug: Start/Continue' })
-    vim.keymap.set('n', '<F1>', dap.step_into, { desc = 'Debug: Step Into' })
-    vim.keymap.set('n', '<F2>', dap.step_over, { desc = 'Debug: Step Over' })
-    vim.keymap.set('n', '<F3>', dap.step_out, { desc = 'Debug: Step Out' })
-    vim.keymap.set('n', '<leader>b', dap.toggle_breakpoint, { desc = 'Debug: Toggle Breakpoint' })
-    vim.keymap.set('n', '<leader>B', function()
-      dap.set_breakpoint(vim.fn.input 'Breakpoint condition: ')
-    end, { desc = 'Debug: Set Breakpoint' })
+    vim.keymap.set('n', '<leader>br', dap.continue, { desc = 'De[b]ug: [R]un' })
+    vim.keymap.set('n', '<leader>bsi', dap.step_into, { desc = 'De[b]ug: [S]tep [I]nto' })
+    vim.keymap.set('n', '<leader>bsv', dap.step_over, { desc = 'De[b]ug: [S]tep O[v]er' })
+    vim.keymap.set('n', '<leader>bso', dap.step_out, { desc = 'De[b]ug: [S]tep [O]ut' })
+    vim.keymap.set('n', '<leader>bb', dap.toggle_breakpoint, { desc = 'De[b]ug: Toggle [B]reakpoint' })
 
     -- Dap UI setup
     -- For more information, see |:help nvim-dap-ui|
@@ -92,5 +106,16 @@ return {
         detached = vim.fn.has 'win32' == 0,
       },
     }
+
+    -- dap.configurations['javascript'] = {
+    --   {
+    --     type = 'javascript',
+    --     request = 'launch',
+    --     name = 'Launch file',
+    --     program = '${file}',
+    --     cwd = '${workspaceFolder}',
+    --     runtimeExecutable = 'node',
+    --   },
+    -- }
   end,
 }

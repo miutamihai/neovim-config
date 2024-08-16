@@ -33,13 +33,19 @@ return {
   },
 
   -- Rust
-  rust_analyzer = {
-    ['rust-analyzer'] = {
-      checkOnSave = {
-        command = 'clippy',
-      },
-    },
-  },
+  -- rust_analyzer = {
+  --   ['rust-analyzer'] = {
+  --     checkOnSave = {
+  --       command = 'clippy',
+  --     },
+  --     lens = {
+  --       enable = true,
+  --       debug = {
+  --         enable = true,
+  --       },
+  --     },
+  --   },
+  -- },
 
   -- Go
   gopls = {},
