@@ -36,20 +36,9 @@ return {
       -- You can provide additional configuration to the handlers,
       -- see mason-nvim-dap README for more information
       handlers = {
-        function(config)
-          require('mason-nvim-dap').default_setup(config)
-        end,
-        js = function(config)
-          config.adapters = {
-            type = 'server',
-            host = '127.0.0.1',
-            port = 8123,
-            executable = {
-              command = 'js-debug-adapter',
-            },
-          }
-          require('mason-nvim-dap').default_setup(config)
-        end,
+        -- function(config)
+        --   require('mason-nvim-dap').default_setup(config)
+        -- end,
       },
 
       -- You'll need to check that you have the required things installed
@@ -107,15 +96,8 @@ return {
       },
     }
 
-    -- dap.configurations['javascript'] = {
-    --   {
-    --     type = 'javascript',
-    --     request = 'launch',
-    --     name = 'Launch file',
-    --     program = '${file}',
-    --     cwd = '${workspaceFolder}',
-    --     runtimeExecutable = 'node',
-    --   },
-    -- }
+    local setup_adapters = require 'custom.setup.dap_adapters'
+
+    setup_adapters()
   end,
 }
