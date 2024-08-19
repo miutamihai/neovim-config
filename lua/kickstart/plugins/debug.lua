@@ -48,6 +48,7 @@ return {
         'delve',
         'codelldb',
         'js',
+        'elixir',
       },
     }
 
