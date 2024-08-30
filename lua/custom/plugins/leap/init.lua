@@ -17,9 +17,9 @@ return {
 
     leap.opts.highlight_unlabeled_phase_one_targets = true
 
-    vim.keymap.set({ 'n', 'x', 'o' }, 't', '<Plug>(leap-forward)')
-    vim.keymap.set({ 'n', 'x', 'o' }, 'T', '<Plug>(leap-backward)')
-    vim.keymap.set({ 'n', 'x', 'o' }, 'gt', '<Plug>(leap-from-window)')
+    vim.keymap.set({ 'n', 'x', 'o' }, 's', '<Plug>(leap-forward)')
+    vim.keymap.set({ 'n', 'x', 'o' }, 'S', '<Plug>(leap-backward)')
+    vim.keymap.set({ 'n', 'x', 'o' }, 'gs', '<Plug>(leap-from-window)')
     leap.opts.equivalence_classes = { ' \t\r\n', '([{', ')]}', '\'"`' }
     require('leap.user').set_repeat_keys('<enter>', '<backspace>')
   end,
