@@ -104,4 +104,10 @@ return {
 
   -- SQL
   sqlls = {},
+
+  -- OCaml
+  ocamllsp = {},
+
+  -- Julia
+  julials = {},
 }
