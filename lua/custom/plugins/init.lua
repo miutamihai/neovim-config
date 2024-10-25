@@ -17,7 +17,6 @@ return {
   require 'custom.plugins.bookmark',
   require 'custom.plugins.git-conflict',
   require 'custom.plugins.spectre',
-  require 'custom.plugins.markdown-preview',
   require 'custom.plugins.dbee',
   require 'custom.plugins.rustaceanvim',
   require 'custom.plugins.neotest',

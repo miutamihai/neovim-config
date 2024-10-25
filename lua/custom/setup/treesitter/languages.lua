@@ -37,4 +37,5 @@ return {
   'prisma',
   'sql',
   'json',
+  'php',
 }
