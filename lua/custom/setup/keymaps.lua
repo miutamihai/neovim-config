@@ -77,4 +77,8 @@ return function()
   vim.keymap.set('n', '<space>bt', function()
     require('neotest').run.run { vim.fn.expand '%', strategy = 'dap', suite = true }
   end, { noremap = true, silent = true, desc = 'De[b]ug: [T]ests' })
+
+  vim.keymap.set('n', '<space>ct', function()
+    require('neotest').run.run()
+  end, { noremap = true, silent = true, desc = '[C]ode: Run [T]ests' })
 end

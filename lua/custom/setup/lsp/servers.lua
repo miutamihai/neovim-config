@@ -106,8 +106,11 @@ return {
   sqlls = {},
 
   -- OCaml
-  ocamllsp = {},
+  -- ocamllsp = {},
 
   -- Julia
   julials = {},
+
+  -- PHP
+  intelephense = {},
 }

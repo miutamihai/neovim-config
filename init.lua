@@ -128,6 +128,9 @@ vim.opt.smartcase = true
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
 
+-- Idk what dhis one does
+vim.opt.termsync = true
+
 -- Decrease update time
 vim.opt.updatetime = 250
 
