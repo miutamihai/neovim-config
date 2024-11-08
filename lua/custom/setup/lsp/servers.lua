@@ -8,10 +8,7 @@ return {
 
   -- JavaScript
   vtsls = {},
-  eslint = {},
-  volar = {},
   biome = {},
-  prismals = {},
 
   -- Python
   ruff = {
