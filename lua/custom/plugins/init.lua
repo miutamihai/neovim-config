@@ -21,4 +21,5 @@ return {
   require 'custom.plugins.rustaceanvim',
   require 'custom.plugins.neotest',
   require 'custom.plugins.leap',
+  require 'custom.plugins.lualine',
 }
