@@ -24,12 +24,12 @@ return {
   },
   dependencies = {
     'MunifTanjim/nui.nvim',
-    'rcarriga/nvim-notify',
+    -- 'rcarriga/nvim-notify',
   },
   config = function(_, opts)
-    require('notify').setup {
-      background_colour = '#000000',
-    }
+    -- require('notify').setup {
+    --   background_colour = '#000000',
+    -- }
     require('noice').setup(opts)
     require 'custom.plugins.noice.set-hightlight-groups'()
   end,

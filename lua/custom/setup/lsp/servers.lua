@@ -13,10 +13,10 @@ return {
   -- Python
   ruff = {
     cmd_env = { RUFF_TRACE = 'messages' },
-    cmd = { 'pipenv', 'run', 'ruff', 'server', '--preview' },
+    -- cmd = { 'pipenv', 'run', 'ruff', 'server', '--preview' },
   },
   pyright = {
-    cmd = { 'pipenv', 'run', 'pyright-langserver', '--stdio' },
+    -- cmd = { 'pipenv', 'run', 'pyright-langserver', '--stdio' },
     pyright = {
       -- Using Ruff's import organizer
       disableOrganizeImports = true,
@@ -103,7 +103,7 @@ return {
   sqlls = {},
 
   -- OCaml
-  -- ocamllsp = {},
+  ocamllsp = {},
 
   -- Julia
   julials = {},

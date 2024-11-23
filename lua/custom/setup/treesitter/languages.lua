@@ -38,4 +38,5 @@ return {
   'sql',
   'json',
   'php',
+  'ruby',
 }
