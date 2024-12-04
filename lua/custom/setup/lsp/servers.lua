@@ -74,7 +74,7 @@ return {
   bashls = {},
 
   -- C/C++
-  clangd = {},
+  clangd = { filetypes = { 'c', 'cpp' } },
 
   -- Zig
   zls = {},
@@ -110,4 +110,7 @@ return {
 
   -- PHP
   intelephense = {},
+
+  -- Protobuf
+  bufls = {},
 }
