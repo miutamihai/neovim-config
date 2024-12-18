@@ -2,14 +2,11 @@
 
 return function()
   -- TODO: Change the lua ones to use the correct api
-  -- Neotree
-  vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>Neotree reveal<cr>', { noremap = true, silent = true, desc = 'Toggle Explorer' })
+  -- Oil
+  vim.api.nvim_set_keymap('n', '<leader>e', '<cmd>Oil<cr>', { noremap = true, silent = true, desc = 'Toggle Oil' })
 
   -- Buffers
   vim.api.nvim_set_keymap('n', '<leader>do', '<cmd>BufOnly<cr>', { noremap = true, silent = true, desc = 'Close [O]ther Buffers' })
-
-  -- Git
-  vim.api.nvim_set_keymap('n', '<leader>gd', '<cmd>lua require("gitsigns").diffthis() <cr>', { noremap = true, silent = true, desc = 'View Git diff' })
 
   -- LSP
   vim.api.nvim_set_keymap(

@@ -21,6 +21,5 @@ return {
     vim.keymap.set({ 'n', 'x', 'o' }, 'S', '<Plug>(leap-backward)')
     vim.keymap.set({ 'n', 'x', 'o' }, 'gs', '<Plug>(leap-from-window)')
     leap.opts.equivalence_classes = { ' \t\r\n', '([{', ')]}', '\'"`' }
-    require('leap.user').set_repeat_keys('<enter>', '<backspace>')
   end,
 }

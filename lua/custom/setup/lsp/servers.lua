@@ -93,8 +93,9 @@ return {
   terraformls = {},
   tflint = {},
 
-  -- Elixir
+  -- Elixir / Erlang
   lexical = {},
+  elp = {},
 
   -- Text
   typos_lsp = {},

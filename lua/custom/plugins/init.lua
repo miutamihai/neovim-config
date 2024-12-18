@@ -3,7 +3,6 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  require 'custom.plugins.neotree',
   require 'custom.plugins.colorscheme',
   require 'custom.plugins.autopair',
   require 'custom.plugins.noice',
@@ -22,4 +21,6 @@ return {
   require 'custom.plugins.neotest',
   require 'custom.plugins.leap',
   require 'custom.plugins.lualine',
+  require 'custom.plugins.oil',
+  require 'custom.plugins.fugitive',
 }
