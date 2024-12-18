@@ -13,7 +13,6 @@ return {
   require 'custom.plugins.scala-metals',
   require 'custom.plugins.gopher',
   require 'custom.plugins.haskell-tools',
-  require 'custom.plugins.bookmark',
   require 'custom.plugins.git-conflict',
   require 'custom.plugins.spectre',
   require 'custom.plugins.dbee',
